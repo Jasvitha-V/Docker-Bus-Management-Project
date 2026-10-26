@@ -1,3 +1,4 @@
+
 package com.klef.soa.docker.controller;
 
 import java.util.List;
@@ -11,7 +12,20 @@ import com.klef.soa.docker.service.BusService;
 
 import jakarta.validation.Valid;
 
-@CrossOrigin(origins = "*")
+@CrossOrigin(
+    origins = {
+        "http://localhost:3000",
+        "http://localhost:5173"
+    },
+    allowedHeaders = "*",
+    methods = {
+        RequestMethod.GET,
+        RequestMethod.POST,
+        RequestMethod.PUT,
+        RequestMethod.DELETE,
+        RequestMethod.OPTIONS
+    }
+)
 @RestController
 public class BusController {
 

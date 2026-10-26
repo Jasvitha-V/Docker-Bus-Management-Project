@@ -1,3 +1,4 @@
+
 package com.klef.soa.docker.configuration;
 
 import org.springframework.context.annotation.Bean;
@@ -8,16 +9,15 @@ import io.swagger.v3.oas.models.info.Contact;
 import io.swagger.v3.oas.models.info.Info;
 
 @Configuration
-public class SwaggerConfig 
-{
+public class SwaggerConfig {
+
     @Bean
-    public OpenAPI customOpenAPI() 
-    {
+    public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
                         .title("BUS Service API")
                         .version("1.0")
-                        .description("REST API Documentation")
+                        .description("REST API Documentation for Bus Management")
                         .contact(new Contact()
                                 .name("KLUniversity")
                                 .email("demo@example.com")));
