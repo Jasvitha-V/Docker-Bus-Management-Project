@@ -101,7 +101,7 @@ export default function App() {
       <main className="container py-4 py-lg-5" id="dashboard">
         <div className="page-heading">
           <div>
-            <div className="eyebrow">FLEET MANAGEMENT / OVERVIEW</div>
+            <div className="eyebrow">2400030793 - Bus Management</div>
             <h1>Bus management</h1>
             <p className="text-secondary mb-0">A simple place to manage your bus fleet and records.</p>
           </div>

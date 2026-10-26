@@ -20,7 +20,7 @@ public class BusController {
 
     @GetMapping("/")
     public String home() {
-        return "CRUD Service Project is Running....";
+        return "SOA Docker Full Stack Deployment";
     }
 
     @PostMapping("/Add")
