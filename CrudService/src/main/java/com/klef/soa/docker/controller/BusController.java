@@ -11,7 +11,7 @@ import com.klef.soa.docker.service.BusService;
 
 import jakarta.validation.Valid;
 
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "*")
 @RestController
 public class BusController {
 
