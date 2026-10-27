@@ -14,7 +14,7 @@ services:
       - springboot-postgres-net
 
   backend:
-    image: jasvithavattikuti/docker-backend-2400030793:latest
+    image: jasvithavattikuti/bus-management-backend:latest
     container_name: docker-springboot
     ports:
       - "8081:8081"
@@ -25,7 +25,7 @@ services:
       - springboot-postgres-net
 
   frontend:
-    image: jasvithavattikuti/docker-frontend-2400030793:latest
+    image: jasvithavattikuti/bus-management-frontend:latest
     container_name: docker-react
     ports:
       - "3000:80"
